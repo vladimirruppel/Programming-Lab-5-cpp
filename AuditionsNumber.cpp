@@ -7,6 +7,7 @@ AuditionsNumber::AuditionsNumber(int count)
 
 void AuditionsNumber::setCount(int count)
 {
+	if (count < 0) throw std::invalid_argument("Negative Number Exception");
 	this->count = count;
 }
 
